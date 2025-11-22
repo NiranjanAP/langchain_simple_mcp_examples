@@ -52,7 +52,7 @@ This client demonstrates calling the weather tools and printing a human-readable
 
 5. Run the web search example client
 ```bash
-python clientfor_websearch.py "your search query here"
+python clientfor_websearch.py
 ```
 Depending on the implementation, the script will either query a search API or fetch a small set of pages and print titles/snippets for the top results.
 
