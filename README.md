@@ -8,6 +8,7 @@ Files
 - weather_server.py — a small server that exposes tools to fetch weather data from the National Weather Service (https://api.weather.gov). The server adds the required User-Agent header and includes simple caching.
 - clientfor_weather_server.py — a client that demonstrates calling the weather tools on `weather_server.py` (or directly testing the weather endpoints) and printing results to stdout or using them in an example flow.
 - clientfor_websearch.py — a small example client demonstrating direct web search or lightweight retrieval to retrieve page titles/snippets for a query. This example is intended for learning/demo purposes; follow applicable terms of service and robots.txt when running web requests.
+- sqlagent.py - demonstrates the use of agent interacting with SQL db using langchain wrapper SQLDatabase and SQLDatabaseToolkit
 
 Quick overview
 - math_server.py implements two basic tools:
@@ -20,6 +21,8 @@ Quick overview
 
 - clientfor_websearch.py demonstrates a basic direct web search/retrieval approach: it can call a public search endpoint or fetch a small set of web pages and extract titles and short snippets. It is intended as an example of integrating retrieval into an MCP-style setup; if you plan to run automated searches at scale, prefer using a search API and follow rate limits and usage policies.
 
+- sqlagent.py downloads a sample db called chinook.db from "https://storage.googleapis.com/benchmarks-artifacts/chinook/Chinook.db", sets up sql tools using the langchain wrapper SQLDatabaseToolkit. Makes a simple query to fetch data from the db.
+  
 Prerequisites
 - Python 3.8+ (or any supported Python 3 version)
 - requests (used by several examples)
