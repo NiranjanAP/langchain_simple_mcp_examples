@@ -22,6 +22,8 @@ Quick overview
 - clientfor_websearch.py demonstrates a basic direct web search/retrieval approach: it can call a public search endpoint or fetch a small set of web pages and extract titles and short snippets. It is intended as an example of integrating retrieval into an MCP-style setup; if you plan to run automated searches at scale, prefer using a search API and follow rate limits and usage policies.
 
 - sqlagent.py downloads a sample db called chinook.db from "https://storage.googleapis.com/benchmarks-artifacts/chinook/Chinook.db", sets up sql tools using the langchain wrapper SQLDatabaseToolkit. Makes a simple query to fetch data from the db.
+
+- embeddings.py demonstrates the use of vectorstore.similarity_search_with_score; compares a each text with each other in given text array and gives out a similarity score - the lower the number higher the match
   
 Prerequisites
 - Python 3.8+ (or any supported Python 3 version)
